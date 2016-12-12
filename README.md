@@ -68,14 +68,23 @@
             这个方法没有返回值，本质上与使用for循环迭代数组一样。
             
 十一.归并方法： reduce()和reduceRight()。这两个方法都会迭代数组的所有项，然后构建一个最终返回的值。
+
                reduce()方法从数组的第一项开始，逐个遍历道最后而reduceRight()则从数组的最后一项开始，向前遍历道第一项。
+               
                这两个方法都接收两个参数：一个在每一项上调用的函数（必选）和作为归并基础的初始值。
+               
               传给reduce()和reduceRight()的函数接收4个参数：前一个值，当前值，项的索引和数组对象。
+              
               这个函数返回的任何值都作为第一个参数自动传给下一项。
+              
               var values=[1,2,3,4,5]
+              
               var sum=values.reduce(function(prev,cur,index,array){
+              
                   return prev+cur;
+                  
               });
+              
               alert(sum);
     
             
